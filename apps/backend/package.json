@@ -5,12 +5,17 @@
   "type": "module",
   "main": "server.js",
   "scripts": {
+    "build": "node --check server.js && node --check src/app.js",
     "dev": "node --watch server.js",
     "start": "node server.js"
   },
   "dependencies": {
+    "@prisma/client": "^6.19.3",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "prisma": "^6.19.3"
   }
 }
